@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'pages/abarrotes_page.dart';
-import 'pages/golosinas_page.dart';
+import 'pages/Golosinas_page.dart'; 
+import 'pages/ricocan_page.dart'; 
+
 import 'cart.dart';
 
 void main() {
@@ -35,16 +37,26 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 2,
+      length: 3, 
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Minimarket Taully'),
           bottom: const TabBar(
-            tabs: [Tab(text: 'Abarrotes'), Tab(text: 'Golosinas')],
+            tabs: [
+              Tab(text: 'Abarrotes'),
+              Tab(text: 'Golosinas'),
+              Tab(text: 'Ricocan'), // 
+            ],
           ),
           backgroundColor: const Color.fromARGB(255, 241, 226, 10),
         ),
-        body: const TabBarView(children: [AbarrotesPage(), GolosinasPage()]),
+        body: const TabBarView(
+          children: [
+            AbarrotesPage(),
+            GolosinasPage(),
+        RicocanPage(), // 
+          ],
+        ),
       ),
     );
   }

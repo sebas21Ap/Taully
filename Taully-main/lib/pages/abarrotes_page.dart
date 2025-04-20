@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import '../widgets/product_list.dart';
-import '../cart.dart'; // Importamos la clase Cart
+// Importamos la clase Cart
 
 class AbarrotesPage extends StatelessWidget {
   const AbarrotesPage({super.key});

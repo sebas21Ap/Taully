@@ -136,7 +136,7 @@ class ProductListPage extends StatelessWidget {
                     onPressed: () => cart.removeFromCart(item),
                   ),
                 );
-              }).toList(),
+              }),
               const Divider(),
               Text('Total: S/ ${cart.totalAmount.toStringAsFixed(2)}'),
             ],

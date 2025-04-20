@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import '../widgets/product_list.dart';
-import '../cart.dart';
 
 class GolosinasPage extends StatelessWidget {
   const GolosinasPage({super.key});
